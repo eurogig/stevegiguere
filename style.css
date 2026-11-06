@@ -40,3 +40,37 @@
 @media(max-width:720px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero h1{font-size:clamp(68px,16vw,100px);letter-spacing:-4px}.hello{font-size:20px}.hero-roles{font-size:9px}.hero .intro{font-size:20px}.portrait{width:min(100% - 16px,330px);justify-self:center}.portrait-frame{aspect-ratio:1;transform:rotate(1deg)}.field-notes summary{align-items:start;flex-direction:column;gap:6px;font-size:10px}.field-action{margin-left:31px;font-size:8px}.field-notes-content{grid-template-columns:1fr;gap:25px;padding-bottom:35px}.field-notes-content>div>p:not(.eyebrow){max-width:100%}}
 
 .feature-image{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+
+/* On phones, introduce the person before the supporting copy. */
+.mobile-greeting{display:none}
+.hero h1>.desktop-name{color:var(--text)}
+.desktop-name>span{color:var(--accent)}
+@media(max-width:720px){
+  .navigation{height:56px}
+  .hero{padding-top:18px}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:14px;margin-bottom:20px}
+  .hero-copy{display:contents}
+  .hero .hello,.hero h1>.desktop-name,.hero .hero-description,.hero .personal-aside{display:none}
+  .hero h1{order:1;font-size:clamp(30px,8vw,40px);line-height:1.15;letter-spacing:-1.3px;margin:0}
+  .hero h1>.mobile-greeting{display:inline;color:var(--text)}
+  .hero-roles{order:2;margin:0;font-size:9px;letter-spacing:1px}
+  .hero .portrait{order:3;display:grid;grid-template-columns:clamp(100px,29vw,140px) minmax(0,1fr);gap:20px;align-items:center;width:100%;margin:4px 0 6px;justify-self:stretch}
+  .portrait-frame{width:100%;box-shadow:6px 6px 0 #192015}
+  .portrait-fallback{font-size:44px;letter-spacing:-4px}
+  .portrait-marker{font-size:6px;letter-spacing:.5px;bottom:7px;left:7px;padding:4px 5px}
+  .portrait figcaption{padding:0;min-width:0}
+  .portrait-caption{font-size:9px;line-height:1.5;margin:0 0 8px}
+  .portrait-meta>div{grid-template-columns:minmax(0,1fr);gap:2px;padding-top:6px}
+  .portrait-meta dt{font-size:7px;padding:0}
+  .portrait-meta dd{font-size:10px;line-height:1.5;overflow-wrap:anywhere}
+  .hero .intro{order:4;font-size:18px;line-height:1.45;margin:0;max-width:none}
+  .hero-copy .actions{order:5;margin-top:4px;gap:16px}
+  .hero-copy .button{font-size:12px;gap:14px;padding:12px 14px}
+  .hero-copy .text-link{font-size:12px;gap:8px}
+}
+@media(max-width:360px){
+  .navigation nav{gap:10px;font-size:8px}
+  .hero .portrait{gap:16px}
+  .hero-copy .actions{gap:12px}
+  .hero-copy .button{font-size:11px;gap:8px;padding-inline:10px}
+}
