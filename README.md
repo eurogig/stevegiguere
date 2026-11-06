@@ -1,52 +1,72 @@
-# stevegiguere.com
+# Steve Giguere
 
-Steve Giguere's personal site. A fresh build: AI security, public speaking, writing, and curiosity.
+**Live website: [stevegiguere.com](https://stevegiguere.com/)**
 
-## Local development
+Steve's personal website: AI security, speaking, writing, experiments, and life beyond the keyboard. A console-inspired design with responsive layouts, an interactive agent trust-boundary illustration, and a hidden introductory security challenge.
 
-Requires Node.js 20+. No packages need installing.
+Source: [eurogig/stevegiguere](https://github.com/eurogig/stevegiguere). Hosted on Vercel, with `stevegiguere.com` as the canonical domain and `www.stevegiguere.com` redirecting to it.
 
-```sh
-npm run dev
-```
+## Updating the live site
 
-Open http://localhost:3000. Content is rendered on every request: after changing `content.json`, refresh the browser. No server restart is needed. If a previous preview server is running, restart it once to pick up the new renderer.
+1. Edit the content or source files in this repository.
+2. Commit and push changes to `main`.
+3. Vercel builds and deploys the update automatically. Wait for the deployment to finish before checking the live site.
 
-Run `npm run check` for syntax and content-rendering tests, and `npm run build` to generate `dist/`. Serve or deploy `dist/`; the root `index.html` is now a template.
+Vercel uses `npm run build` and publishes `dist/`, as configured in `vercel.json`. Build output is generated rather than committed. Domain redirects are managed in the Vercel project's domain settings.
 
-## Deployment
+## Managing content
 
-Import `eurogig/stevegiguere` into Vercel, using the Other framework preset. The checked-in configuration builds to `dist/`. Connect the custom domain when ready.
-
-## Editing
-
-- `content.json`: editable profile, portrait, featured article, resources, speaking topics, bio, and shared contact links.
-- `index.html`: page layout with build-time content placeholders.
-- `style.css`: visual system, responsive layouts, motion preferences.
-- `app.js`: workflow inspector, command palette, and introductory hidden challenge.
-- `BRIEF.md`: creative direction and follow-up work.
-
-### Updating content
-
-Edit `content.json` in your editor or GitHub's file editor. Keep the JSON valid (double quotes, no trailing commas or comments). Text is plain text; HTML is escaped automatically. Use `\n` within resource titles for an intentional line break.
+Edit [content.json](content.json) in your editor or GitHub's file editor. This is the central place for your profile, featured article, resource cards, speaking topics, biography, and contact links.
 
 - **Featured article:** update `featured.title`, `subtitle`, `description`, `date`, `url`, and `linkLabel`.
-- **Podcast, blog, or project cards:** edit or add objects in `resources`. Array order is display order. Each needs `category`, `title`, `description`, `source`, `url`, and `linkLabel`.
-- **Profile and portrait:** update `profile`. `profile.portrait.url` can use an HTTPS URL or a local `/assets/steve.jpg` path. Put local images in `public/assets/`; the build copies them to `dist/assets/`.
-- **Contact links:** update `links` once; repeated buttons use the same value.
+- **Podcast, blog, or project cards:** edit or add objects in `resources`. Array order is display order. Each entry needs `category`, `title`, `description`, `source`, `url`, and `linkLabel`.
+- **Profile and portrait:** update `profile`. The current portrait is `public/assets/steve.png`, referenced as `/assets/steve.png`. Add new images to `public/assets/` and reference them with `/assets/filename`.
+- **Contact links:** update `links` once; repeated buttons use the same values.
 - **Speaking and biography:** edit `speaking.topics`, `speaking.description`, and `about`.
 
-`featured.image` is `null` to keep the current diagram. To show an article image instead, use an object such as:
+Keep the JSON valid: double quotes, no trailing commas or comments. Text is plain text; HTML is escaped automatically. Use `\n` within resource titles for an intentional line break.
+
+`featured.image` is `null` to keep the diagram. To use an article image, replace it with an object such as:
 
 ```json
-"image": {
+{
   "url": "/assets/article.jpg",
   "alt": "A description of the image"
 }
 ```
 
-External links must use HTTPS. Missing fields or invalid URLs stop the build with a field-specific error. The built page contains all content, so it does not need a browser-side fetch or JavaScript to display it. Once Vercel is connected to GitHub, a commit to its configured production branch triggers a rebuild.
+External links must use HTTPS. Missing fields or invalid URLs stop the build with a field-specific error. Content is rendered into HTML during the build, so visitors do not need JavaScript to read it.
 
-The agent workflow is an educational illustration, not live telemetry. The hidden challenge is a client-side puzzle: its flag is deliberately public, not a security secret. There are no live model calls or credentials. Fonts use Google Fonts with local system fallbacks.
+## Source layout
 
-The repository is a personal project; no employer endorsement is implied.
+- `content.json`: editable content and references.
+- `index.html`: HTML template and page structure.
+- `style.css`: visual design, responsive layouts, and section framing.
+- `app.js`: workflow inspector, automatic scrolling, command palette, and hidden challenge.
+- `public/assets/`: portrait, favicon, and other published images.
+- `scripts/`: content rendering, validation tests, build, and local preview.
+- `vercel.json`: deployment configuration.
+- `BRIEF.md`: creative direction and project context.
+
+## Local development
+
+Requires Node.js 20 or later. No dependency installation is needed.
+
+```sh
+npm run dev
+```
+
+Open http://localhost:3000. Content is rendered on each request; refresh after editing `content.json`. Restart the server after changing its code.
+
+```sh
+npm run check
+npm run build
+```
+
+Checks cover JavaScript syntax and content rendering. The build generates the deployable site in `dist/`; the root `index.html` contains template placeholders and should not be opened directly as the finished site.
+
+## About the interactive elements
+
+The agent workflow is an educational illustration. The hidden challenge is a browser-only puzzle with a deliberately discoverable flag. Neither makes live model calls or uses credentials. Fonts load from Google Fonts, with system fallbacks.
+
+This is a personal website. Opinions are Steve's own; no employer endorsement is implied. See [LICENSE.md](LICENSE.md) for the repository license.
