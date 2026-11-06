@@ -36,6 +36,9 @@
 .field-notes-content{display:grid;grid-template-columns:1.15fr 1fr;gap:80px;align-items:center;padding:25px 0 45px}
 .field-notes-content>div>p:not(.eyebrow){font-size:14px;color:var(--muted);max-width:380px;margin-top:22px}
 .field-notes-content .eyebrow{color:var(--accent);font-size:9px;margin-bottom:20px}
+@media(min-width:721px){
+  .field-notes-content{min-height:calc(100vh - 48px);min-height:calc(100svh - 48px);padding-block:24px 40px;align-items:center}
+}
 @media(max-width:1000px){.hero-grid,.field-notes-content{gap:40px}.hero h1{font-size:clamp(64px,7.5vw,82px)}.hero .intro{font-size:20px}}
 @media(max-width:720px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero h1{font-size:clamp(68px,16vw,100px);letter-spacing:-4px}.hello{font-size:20px}.hero-roles{font-size:9px}.hero .intro{font-size:20px}.portrait{width:min(100% - 16px,330px);justify-self:center}.portrait-frame{aspect-ratio:1;transform:rotate(1deg)}.field-notes summary{align-items:start;flex-direction:column;gap:6px;font-size:10px}.field-action{margin-left:31px;font-size:8px}.field-notes-content{grid-template-columns:1fr;gap:25px;padding-bottom:35px}.field-notes-content>div>p:not(.eyebrow){max-width:100%}}
 
