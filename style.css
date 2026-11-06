@@ -54,7 +54,7 @@
   .hero h1{order:1;font-size:clamp(30px,8vw,40px);line-height:1.15;letter-spacing:-1.3px;margin:0}
   .hero h1>.mobile-greeting{display:inline;color:var(--text)}
   .hero-roles{order:2;margin:0;font-size:9px;letter-spacing:1px}
-  .hero .portrait{order:3;display:grid;grid-template-columns:clamp(112px,31vw,150px) minmax(0,1fr);gap:20px;align-items:center;width:100%;margin:4px 0 6px;justify-self:stretch}
+  .hero .portrait{order:3;display:grid;grid-template-columns:clamp(128px,36vw,170px) minmax(0,1fr);gap:20px;align-items:center;width:100%;margin:4px 0 6px;justify-self:stretch}
   .portrait-frame{width:100%;box-shadow:6px 6px 0 #192015}
   .portrait-fallback{font-size:44px;letter-spacing:-4px}
   .portrait-marker{font-size:6px;letter-spacing:.5px;bottom:7px;left:7px;padding:4px 5px}

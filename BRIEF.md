@@ -19,7 +19,7 @@ Lead with "Hi, I’m Steve", Steve's name, an authentic portrait, and first-pers
 ## Next iterations
 - Add a user-selected portrait and authentic speaking photography.
 - Curate public projects before adding a Lab portfolio. Never expose private research or internal partnerships.
-- Confirm preferred current role label: user brief says Principal AI Security Advocate; latest article byline says Principal, AI Security Strategy.
+- Confirmed current role: Principal, AI Security Strategy.
 - Expand the introductory hidden puzzle into a 3–5 minute agent-trace CTF after the core site is approved.
 - Review desktop/mobile visually in a connected browser; verify keyboard and modal interactions.
 - Connect GitHub and Vercel; domain switch is separate.
