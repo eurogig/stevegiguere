@@ -13,7 +13,10 @@ workflow.addEventListener('toggle', () => {
   if (!workflow.open) return;
   requestAnimationFrame(() => {
     if (!workflow.open) return;
-    document.querySelector('#workflow-intro').scrollIntoView({
+    const target = window.matchMedia('(max-width: 720px)').matches
+      ? document.querySelector('#workflow-intro')
+      : document.querySelector('.field-notes-content');
+    target.scrollIntoView({
       block: 'start',
       behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
     });
