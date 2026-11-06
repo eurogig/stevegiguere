@@ -1,0 +1,14 @@
+{
+  "name": "stevegiguere.com",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Steve Giguere's personal website",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check app.js && node --check scripts/serve.mjs && node --check scripts/build.mjs && node --test scripts/render.test.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

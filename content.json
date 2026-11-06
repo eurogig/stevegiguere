@@ -1,0 +1,91 @@
+{
+  "site": {
+    "title": "Steve Giguere — AI Security, Builder & Speaker",
+    "description": "Meet Steve Giguere: AI security advocate, builder, speaker, and British-Canadian technologist. I build things, break things, and help people make sense of them."
+  },
+  "profile": {
+    "name": "Steve Giguere",
+    "firstName": "Steve",
+    "lastName": "Giguere",
+    "greeting": "Hi, I’m Steve.",
+    "roles": "AI SECURITY / BUILDER / SPEAKER",
+    "intro": "I build things, break things, speak about them, and occasionally write them down.",
+    "description": "These days, I’m figuring out what happens when AI gets tools, permissions, and a little too much confidence—and helping people make sense of it.",
+    "aside": "Also: guitar, Ultimate, and strong opinions about beer.",
+    "portrait": {
+      "url": "https://stevegiguere.com/assets/img/about/about-1.jpg",
+      "alt": "Steve Giguere",
+      "caption": "British-Canadian. Technically curious."
+    },
+    "role": "Principal AI Security Advocate",
+    "employer": "Lakera / Check Point",
+    "publicationCredit": "Co-author",
+    "publisher": "O’Reilly"
+  },
+  "links": {
+    "youtube": "https://www.youtube.com/@stephengiguere",
+    "calendly": "https://calendly.com/hello-stevegiguere/30min",
+    "linkedin": "https://www.linkedin.com/in/stevegiguere/",
+    "github": "https://github.com/eurogig"
+  },
+  "signal": {
+    "description": "Ideas from the places where AI meets actual infrastructure, actual permissions, and actual consequences."
+  },
+  "featured": {
+    "category": "WRITING",
+    "date": "SEPTEMBER 2026",
+    "title": "Goals Are Not Enough",
+    "subtitle": "Securing AI Agents with NVIDIA OpenShell",
+    "description": "Where runtime boundaries meet the question of whether an agent is still doing its job.",
+    "url": "https://blog.checkpoint.com/ai-security/check-point-nvidia-openshell/",
+    "linkLabel": "Read on Check Point",
+    "image": null
+  },
+  "resources": [
+    {
+      "category": "IN CONVERSATION",
+      "title": "Building the plumbing\nfor AI security.",
+      "description": "AI gateways, defence in depth, and the cloud security lessons we should bring with us.",
+      "source": "Cloud Security Podcast",
+      "url": "https://www.cloudsecuritypodcast.tv/videos/building-the-plumbing-for-ai-security-gateways-and-defense-in-depth",
+      "linkLabel": "Watch / listen"
+    },
+    {
+      "category": "PERSONAL WRITING",
+      "title": "Curiosity, committed\nto the internet.",
+      "description": "My personal blog and podcast. Technology, security, and ideas worth taking apart.",
+      "source": "Codifyre",
+      "url": "https://codifyre.com/",
+      "linkLabel": "Explore"
+    }
+  ],
+  "speaking": {
+    "description": "I speak about AI security, agents, and the assumptions we carry into new technology. Expect practical examples, uncomfortable questions, and the occasional perfectly reasonable tangent.",
+    "topics": [
+      {
+        "title": "When agents start acting",
+        "description": "Tools, identities, and trust boundaries."
+      },
+      {
+        "title": "Beyond the prompt",
+        "description": "Runtime controls and defence in depth."
+      },
+      {
+        "title": "The security we bring with us",
+        "description": "Connecting AppSec, cloud, and AI teams."
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "I'm Steve, a British-Canadian security technologist. My career has followed the way we build software—from application security and infrastructure as code to cloud-native systems and AI agents.",
+      "Along the way: Synopsys, Aqua, StackRox, Bridgecrew / Palo Alto Networks, and now Lakera / Check Point. The common thread is getting hands-on with emerging technology, finding the awkward questions, and making the answers useful.",
+      "I co-authored Cloud Native Application Protection Platforms for O’Reilly, and have helped bring people together through DSO Overflow, wired_in, and the DevSecOps London Gathering."
+    ],
+    "beyondTheKeyboard": "I've represented Great Britain at Ultimate, play guitar and drums, and have strong opinions about beer. I enjoy building communities almost as much as building systems."
+  },
+  "contact": {
+    "headline": "Got a better question?",
+    "description": "Speaking, technical conversations, or something worth building."
+  }
+}
