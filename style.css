@@ -48,13 +48,13 @@
 @media(max-width:720px){
   .navigation{height:56px}
   .hero{padding-top:18px}
-  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:14px;margin-bottom:20px}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:18px;margin-bottom:24px}
   .hero-copy{display:contents}
-  .hero .hello,.hero h1>.desktop-name,.hero .hero-description,.hero .personal-aside{display:none}
+  .hero .hello,.hero h1>.desktop-name{display:none}
   .hero h1{order:1;font-size:clamp(30px,8vw,40px);line-height:1.15;letter-spacing:-1.3px;margin:0}
   .hero h1>.mobile-greeting{display:inline;color:var(--text)}
   .hero-roles{order:2;margin:0;font-size:9px;letter-spacing:1px}
-  .hero .portrait{order:3;display:grid;grid-template-columns:clamp(100px,29vw,140px) minmax(0,1fr);gap:20px;align-items:center;width:100%;margin:4px 0 6px;justify-self:stretch}
+  .hero .portrait{order:3;display:grid;grid-template-columns:clamp(112px,31vw,150px) minmax(0,1fr);gap:20px;align-items:center;width:100%;margin:4px 0 6px;justify-self:stretch}
   .portrait-frame{width:100%;box-shadow:6px 6px 0 #192015}
   .portrait-fallback{font-size:44px;letter-spacing:-4px}
   .portrait-marker{font-size:6px;letter-spacing:.5px;bottom:7px;left:7px;padding:4px 5px}
@@ -62,9 +62,11 @@
   .portrait-caption{font-size:9px;line-height:1.5;margin:0 0 8px}
   .portrait-meta>div{grid-template-columns:minmax(0,1fr);gap:2px;padding-top:6px}
   .portrait-meta dt{font-size:7px;padding:0}
-  .portrait-meta dd{font-size:10px;line-height:1.5;overflow-wrap:anywhere}
-  .hero .intro{order:4;font-size:18px;line-height:1.45;margin:0;max-width:none}
-  .hero-copy .actions{order:5;margin-top:4px;gap:16px}
+  .portrait-meta dd{font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+  .hero .intro{order:4;font-size:20px;line-height:1.45;margin:0;max-width:none}
+  .hero .hero-description{order:5;display:block;font-size:15px;line-height:1.6;margin:0;max-width:none}
+  .hero .personal-aside{order:6;display:block;font-size:10px;line-height:1.8;margin:0;max-width:none}
+  .hero-copy .actions{order:7;margin-top:6px;gap:16px}
   .hero-copy .button{font-size:12px;gap:14px;padding:12px 14px}
   .hero-copy .text-link{font-size:12px;gap:8px}
 }
